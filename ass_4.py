@@ -5,13 +5,6 @@
 
 # to check for the most occuring item in a list, i will create a dictionary of the distinct elements in the list and increment the 
 # count by 1 for every time it occurs in the list
-
-
-
-
-    
-        # append this elements as the keys in the dictionary and set values to 1 
-            
         
 # define the array array_mode that accepts arg num_list
 def array_mode(num_list):
@@ -30,7 +23,11 @@ def array_mode(num_list):
 test = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3]
 print (array_mode(test))
 
-       
+def duplicate_remover(num_list):
+    new_list = list(set(num_list))
+    return new_list
+
+print(duplicate_remover(test))
 
 # Given the array color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
 # Write a JavaScript function to print to console the colors in the following way:
